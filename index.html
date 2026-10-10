@@ -1,16 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio | Game Developer</title>
+  <meta name="theme-color" content="#101812">
+  <meta name="description" content="João Santana's game development portfolio featuring Unity and C# projects.">
+  <title>João Santana | Game Developer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-  <div class="wrap">
-    <a class="logo" href="index.html">João Santana <span>| GAME DEV</span></a>
+  <div class="container navbar">
+    <a class="logo" href="index.html">João Santana</a>
 
     <nav>
       <a href="#projects">Projects</a>
@@ -20,131 +23,210 @@
   </div>
 </header>
 
-<main class="wrap">
+<main>
 
   <section class="hero">
-    <p class="green">GAME DEVELOPMENT PORTFOLIO</p>
-    <h1>Ideas that <span class="green">become games.</span></h1>
-    <p>Explore my games and prototypes developed with Unity and C#.</p>
-    <a class="button" href="#projects">Explore Projects ↓</a>
+    <div class="container hero-content">
+      <p class="eyebrow">Game Development Portfolio</p>
+
+      <h1>Ideas that <span>become games.</span></h1>
+
+      <p>
+        Explore my games and prototypes developed with Unity and C#.
+        Each project is an opportunity to experiment, learn, and create.
+      </p>
+
+      <a class="button" href="#projects">Explore Projects ↓</a>
+    </div>
   </section>
 
-  <section id="projects">
-    <h1>My Projects</h1>
+  <section id="projects" class="projects">
+    <div class="container">
 
-    <div class="grid">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>My Projects</h2>
+        <p>
+          A collection of games and prototypes I've developed while
+          exploring different mechanics and gameplay styles.
+        </p>
+      </div>
 
-      <article class="card">
-        <a href="fazendinha.html">
-          <div class="cover">
-            <img src="images/fazendinha.jpg" alt="Little Farm gameplay">
+      <div class="project-grid">
+
+        <article class="project-card">
+          <a href="fazendinha.html" aria-label="View Little Farm project">
+            <img
+              src="images/fazendinha.jpg"
+              alt="Little Farm gameplay"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="project-info">
+            <h3>Little Farm</h3>
+
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Simulation</span>
+            </div>
+
+            <p>
+              A 2D farming game prototype focused on creating a
+              simple and engaging farming experience.
+            </p>
+
+            <a class="project-link" href="fazendinha.html">
+              View Project →
+            </a>
           </div>
-        </a>
+        </article>
 
-        <div class="card-content">
-          <h2>Little Farm</h2>
-          <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">Simulation</span>
-          </div>
-          <p class="description">
-         A prototype 2D farm game.
-          </p>
-          <a class="button" href="fazendinha.html">View Project →</a>
-        </div>
-      </article>
+        <article class="project-card">
+          <a href="plataforma-2d.html" aria-label="View 2D Platformer project">
+            <img
+              src="images/plataforma-2d.jpg"
+              alt="2D Platformer gameplay"
+              loading="lazy"
+            >
+          </a>
 
-      
-      <article class="card">
-        <a href="plataforma-2d.html">
-          <div class="cover">
-            <img src="images/plataforma-2d.jpg" alt="2D Platformer gameplay">
-          </div>
-        </a>
+          <div class="project-info">
+            <h3>2D Platformer</h3>
 
-        <div class="card-content">
-          <h2>2D Platformer</h2>
-          <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">2D</span>
-          </div>
-          <p class="description">
-            A platform game where you jump and fight monsters.
-                      </p>
-          <a class="button" href="plataforma-2d.html">View Project →</a>
-        </div>
-      </article>
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">2D</span>
+            </div>
 
-           <article class="card">
-        <a href="plataforma-rpg.html">
-          <div class="cover">
-            <img src="images/plataforma-rpg.jpg" alt="2D RPG Platformer gameplay">
-          </div>
-        </a>
+            <p>
+              A platform game where players jump across obstacles
+              and fight monsters.
+            </p>
 
-        <div class="card-content">
-          <h2>2D RPG Platformer</h2>
-          <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">RPG</span>
+            <a class="project-link" href="plataforma-2d.html">
+              View Project →
+            </a>
           </div>
-          <p class="description">
-           An adventure that combines platforming mechanics and RPG elements. The game is very hard..
-          </p>
-          <a class="button" href="plataforma-rpg.html">View Project →</a>
-        </div>
-      </article>
+        </article>
 
-          <article class="card">
-        <a href="jogo-de-naves.html">
-          <div class="cover">
-            <img src="images/jogo-de-naves.jpg" alt="Space Shooter gameplay">
-          </div>
-        </a>
+        <article class="project-card">
+          <a href="plataforma-rpg.html" aria-label="View 2D RPG Platformer project">
+            <img
+              src="images/plataforma-rpg.jpg"
+              alt="2D RPG Platformer gameplay"
+              loading="lazy"
+            >
+          </a>
 
-        <div class="card-content">
-          <h2>Space Shooter</h2>
-          <div class="tags">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">Arcade</span>
+          <div class="project-info">
+            <h3>2D RPG Platformer</h3>
+
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">RPG</span>
+            </div>
+
+            <p>
+              An adventure combining platforming mechanics with
+              RPG elements and challenging gameplay.
+            </p>
+
+            <a class="project-link" href="plataforma-rpg.html">
+              View Project →
+            </a>
           </div>
-          <p class="description">
-            Pilot a spaceship and face challenges in an arcade-style game.
-          </p>
-          <a class="button" href="jogo-de-naves.html">View Project →</a>
-        </div>
-      </article>
+        </article>
+
+        <article class="project-card">
+          <a href="jogo-de-naves.html" aria-label="View Space Shooter project">
+            <img
+              src="images/jogo-de-naves.jpg"
+              alt="Space Shooter gameplay"
+              loading="lazy"
+            >
+          </a>
+
+          <div class="project-info">
+            <h3>Space Shooter</h3>
+
+            <div class="tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Arcade</span>
+            </div>
+
+            <p>
+              Pilot a spaceship, dodge threats, and face challenges
+              in an arcade-style space game.
+            </p>
+
+            <a class="project-link" href="jogo-de-naves.html">
+              View Project →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-grid">
+
+      <div>
+        <p class="eyebrow">A Little About Me</p>
+        <h2>About Me</h2>
+
+        <p>
+          I'm João Santana, a game developer working with Unity and C#.
+          I enjoy building projects, experimenting with gameplay mechanics,
+          and learning new ways to bring ideas to life.
+        </p>
+
+        <p>
+          My portfolio showcases personal projects and prototypes
+          created throughout my development journey.
+        </p>
+      </div>
+
+      <div class="about-highlight">
+        <h3>My Focus</h3>
+        <p>
+          Game development, gameplay programming, 2D games,
+          and interactive experiences using Unity and C#.
+        </p>
+      </div>
 
     </div>
   </section>
 
-  <section id="about">
-    <h1>About Me</h1>
-    <p class="description">
-      I am a game developer who uses Unity and C# to build projects,
-      experiment with gameplay mechanics and improve my development skills.
-    </p>
-  </section>
+  <section id="contact" class="contact">
+    <div class="container">
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Contact</h2>
 
-  <section id="contact" style="padding:35px 0 60px">
-    <h1>Contact</h1>
-    <p class="description">
-      Email: <a href="mailto:joao_santanacontato@proton.me">joao_santanacontato@proton.me</a>
-    </p>
+      <p>
+        Have a question or an opportunity in mind? Feel free to reach out.
+      </p>
+
+      <a
+        class="email-link"
+        href="mailto:joao_santanacontato@proton.me"
+      >joao_santanacontato@proton.me</a>
+    </div>
   </section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    © 2026 João Santana · Game Development Portfolio
+  <div class="container">
+    <p>© 2026 João Santana · Game Development Portfolio</p>
   </div>
 </footer>
 
 </body>
 </html>
-
