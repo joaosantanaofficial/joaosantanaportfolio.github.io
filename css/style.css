@@ -576,3 +576,86 @@ footer {
 }
 
 
+
+/* FIX: INDIVIDUAL GAME PAGE */
+
+body.project-page {
+    margin: 0;
+    background: #1b3025;
+    color: #d6e4d8;
+}
+
+body.project-page > header {
+    width: 100%;
+}
+
+body.project-page .project-banner {
+    display: block;
+    width: 100%;
+    height: 380px;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body.project-page .project-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+}
+
+body.project-page .project-back {
+    margin: 18px 1.5% 0;
+}
+
+body.project-page main.project-layout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) !important;
+    align-items: start;
+    gap: 25px;
+    width: 97%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+
+body.project-page .project-description {
+    min-width: 0;
+}
+
+body.project-page .project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+body.project-page .project-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+body.project-page .project-download {
+    margin: 35px 0;
+}
+
+@media (max-width: 800px) {
+    body.project-page .project-banner {
+        height: 230px;
+    }
+
+    body.project-page main.project-layout {
+        grid-template-columns: minmax(0, 1fr) !important;
+        width: 92%;
+    }
+
+    body.project-page .project-gallery {
+        grid-row: auto;
+    }
+}
